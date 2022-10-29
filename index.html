@@ -1,14 +1,21 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <div id="mydiv"></div>
 
-</body>
+    <script type="text/babel">
+      function Hello() {
+        return <h1>Hello World!</h1>;
+      }
+      
+      ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+    </script>
+
+  </body>
 </html>
-
